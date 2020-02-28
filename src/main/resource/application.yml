@@ -1,0 +1,7 @@
+
+logging:
+  pattern:
+    console: "%msg%n"
+  level:
+    ROOT: INFO
+    org.apache.kafka.clients.consumer: ERROR
