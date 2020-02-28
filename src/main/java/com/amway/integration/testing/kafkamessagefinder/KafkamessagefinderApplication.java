@@ -62,7 +62,7 @@ public class KafkamessagefinderApplication implements ApplicationRunner
 				LOGGER.info("--count assumed as 1");
 			}
 			List<String> correlationIds = args.getOptionValues("correlation");
-			if(correlationIds != null || correlationIds.size() > 1)
+			if(correlationIds != null && correlationIds.size() > 1)
 			{
 				String correlationId = correlationIds.get(0);
 				LOGGER.info("attempting to parse log correlation ID: " + correlationId);
